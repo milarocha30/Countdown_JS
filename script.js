@@ -1,12 +1,15 @@
 
-const formatarDigito = (digito) => `0${digito}`.slice(-2);
+const formatarDigito = (digito) => `0${digito}`.slice(-2); //Concatenação de string
 
 const atualizar = (tempo) => {
     const segundos = document.getElementById('segundos');
+    const minutos = document.getElementById('minutos');
 
     const qntSegundos = tempo % 60;
+    const qntMinutos = tempo % (60 * 60); 
     
     segundos.textContent = formatarDigito(qntSegundos);
+    minutos.textContent = formatarDigito(qntMinutos);
 }
 
 const contagemRegressiva = (tempo) =>{
@@ -27,4 +30,4 @@ const contagemRegressiva = (tempo) =>{
    
 }
 
-contagemRegressiva(90);
+contagemRegressiva(60);
