@@ -15,8 +15,10 @@ body{
 .container {
     display: flex;
     flex-direction: column;
+    top: 0;
+    left: 0;
     width: 100vw;
-    height: 100wh;
+    height: 100vh;
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
