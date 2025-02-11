@@ -31,6 +31,7 @@ body{
     height: 70vh;
     font-family: 'Poppins';
     color: rgb(254, 255, 238);
+    text-shadow: 0 0 10px whitesmoke;
 }
 
 .title p {
@@ -43,4 +44,5 @@ body{
     width: 60vw;
     justify-content: space-between;
     font-family: 'Poppins';
+    text-shadow: 0 0 10px whitesmoke;
 }   
