@@ -6,8 +6,10 @@
 
 body{
     background-image: url('./imagens/imgRG_page-0001.jpg');
+    color: whitesmoke;
     background-size: 230vh 110vh;
     align-items: center;
+    user-select: none;
 }
 
 .container {
@@ -16,8 +18,9 @@ body{
     width: 100vw;
     height: 100wh;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     text-align: center;
+    background-color: #00000080;
 }
 
 .title {
