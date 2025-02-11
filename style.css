@@ -39,6 +39,17 @@ body{
     font-family: 'Poppins';
 }
 
+.button .fa-bell {
+    color: whitesmoke;
+    background-color: #00000080;
+    padding: 8px;
+    text-decoration: none;
+    text-transform: none;
+    cursor: pointer;
+    border: transparent;
+    
+}
+
 .countdown {
     display: flex;
     width: 60vw;
