@@ -1,4 +1,5 @@
 
+
 const formatarDigito = (digito) => `0${digito}`.slice(-2); //Concatenação de string
 
 const atualizar = (tempo) => {
@@ -38,10 +39,24 @@ const contagemRegressiva = (tempo) =>{
 
 const tempoRestante = () => {
     // 1 de janeiro de 1970 - data de referência do JS
-    const dataEvento = new Date ('2025-02-15 13:00:00');
+    const dataEvento = new Date ('2025-02-17 13:30:00');
     const hoje = Date.now();
     return (Math.floor((dataEvento - hoje)/1000));
 
 }
 
 contagemRegressiva(tempoRestante());
+
+const openModal = document.querySelector("#open-modal");
+const closeModal = document.querySelector("#close-modal");
+const modal = document.querySelector("#modal");
+const fade = document.querySelector("#fade");
+
+const toggleModal = () => {
+  modal.classList.toggle("hide");
+  fade.classList.toggle("hide");
+};
+
+openModal.addEventListener("click", toggleModal);
+closeModal.addEventListener("click", toggleModal);
+fade.addEventListener("click", toggleModal);
